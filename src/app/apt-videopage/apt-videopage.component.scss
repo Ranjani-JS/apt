@@ -1,0 +1,23 @@
+.apt-video-banner{
+    height: 600px;
+    width: 100%;
+}
+.apt-videopage {
+    margin: 2rem 3rem;
+  
+    h2 {
+      color: #3b3b3b;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 30px;
+    }
+  
+    .apt-video-list {
+      display: flex;
+      gap: 35px 100px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+}

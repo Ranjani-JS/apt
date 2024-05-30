@@ -1,0 +1,85 @@
+<div class="main-page">
+  <!-- <div class="image-container">
+    <img src="/assets/banner/b1.png" />
+  </div> -->
+  <div class="apt-banner">
+    <owl-carousel-o [options]="customOptions">
+      <ng-container *ngFor="let slide of images">
+        <ng-template class="slide" carouselSlide [id]="slide.id">
+          <img
+            style="max-height: 700px"
+            [src]="slide.image"
+            [alt]="slide.id"
+            [title]="slide.id"
+          />
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+  </div>
+
+  <div class="about-apt">
+    <!-- <div class="about-apt__img">
+      <img class="biglogo" src="/assets/chilli-cup.webp" alt="" />
+    </div> -->
+    <div class="about-apt__description">
+      <div class="about-title">THE SYMPHONY OF SPICE</div>
+      <div class="about-apt__img">
+        <img class="biglogo" src="/assets/chilli-cup.webp" alt="" />
+      </div>
+      <span class="about-shortnote">
+        Experience the rich tapestry of flavors with APT Masala. Our handcrafted
+        blends promise an authentic taste of India in every dish. Elevate your
+        cooking to new heights with our diverse range of spices. From
+        traditional favorites to innovative creations, APT Masala is your
+        partner in culinary excellence. Discover the symphony of spice and
+        transform every meal into a culinary masterpiece.Cooking with APT Masala
+        is more than just following a recipe – it's a culinary adventure. Our
+        blends inspire creativity in the kitchen, encouraging you to explore new
+        flavors and techniques. With APT Masala, every meal becomes a
+        celebration of taste and tradition.Master of Spice" sounds like a title
+        befitting someone with an exceptional understanding and skill in using
+        spices to enhance flavors in cooking. Such a person would likely have a
+        deep knowledge of various spices, their origins, flavors, and how they
+        complement different dishes. They might also be adept at creating unique
+        spice blends and understanding how to balance flavors to create
+        delicious meals. Whether it's creating a complex curry or a simple yet
+        flavorful seasoning, a master of spice would have the expertise to
+        elevate any dish with just the right combination of spices.
+        <div class="read-more">
+          <span (click)="aboutUs()"
+            >Read More
+           <img src="/assets/icon/right-arrow.png">
+          </span>
+        </div>
+      </span>
+    </div>
+  </div>
+
+  <div class="apt-secondary-banner">
+    <h2 class="master-title">OUR MASTER PIECE</h2>
+    <img class="sideimage" src="/assets/masalapack.png" />
+    <img class="secondary-banner" src="/assets/master-piece.png" />
+  </div>
+
+  <div class="apt-videos">
+    <h2>ADVERTISEMENT</h2>
+    <div class="vidoe-list">
+      @for (video of videos; track $index) {
+      <div>
+        <iframe
+          width="400px"
+          height="260px"
+          frameborder="0"
+          [src]="video"
+          allowfullscreen
+        ></iframe>
+      </div>
+      }
+      <p class="watch-more" (click)="watchMore()">Watch More</p>
+    </div>
+  </div>
+
+  <div>
+    <h2>TESTIMONIALS</h2>
+  </div>
+</div>

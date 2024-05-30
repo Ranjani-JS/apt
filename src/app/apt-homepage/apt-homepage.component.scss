@@ -1,0 +1,184 @@
+.header {
+  // border: 1px solid gray;
+  height: 65px;
+}
+
+::ng-deep .header {
+  .mat-toolbar {
+    background: none;
+  }
+}
+
+::ng-deep .header-container {
+  .mat-toolbar-row {
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-button {
+    button {
+      background-color: inherit;
+    }
+  }
+
+  .logo {
+    width: 58px;
+    height: 51px;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+  }
+
+  .tech {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+  }
+}
+
+.image-container {
+  width: 100%;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+.about-apt {
+  margin: 2rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__description {
+    width: 67%;
+
+    .about-title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+
+    .about-shortnote {
+      margin: 0 0 0 38px;
+      font-size: 15px;
+      letter-spacing: 1px;
+      color: #4f4f4f;
+      line-height: 25px;
+    }
+    .read-more {
+      color: red;
+      text-align: center;
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      span {
+        font-weight: bold;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        mat-icon {
+          // animation: name duration timing-function delay iteration-count direction fill-mode;
+          animation: arrowbounce 1600ms infinite
+            cubic-bezier(0.445, 0.05, 0.55, 0.95);
+          margin-left: 15px;
+        }
+
+        img {
+          height: 20px;
+          margin-left: 15px;
+          animation: arrowbounce 1600ms infinite
+            cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        }
+      }
+    }
+  }
+  &__img {
+    width: 33%;
+    img {
+      max-width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+@keyframes arrowbounce {
+  50% {
+    transform: translateX(-10px);
+  }
+}
+
+.apt-secondary-banner {
+  width: 100%;
+  position: relative;
+  .secondary-banner {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  h2 {
+    position: absolute;
+    color: white;
+    right: 50%;
+    font-weight: bold;
+    top: 8%;
+    letter-spacing: 2px;
+    font-size: 30px;
+    transform: translate(50%, -50%);
+  }
+
+  .sideimage {
+    height: 50%;
+    top: 53%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    position: absolute;
+  }
+}
+
+.apt-videos {
+  margin: 2rem 3rem;
+
+  h2 {
+    color: #3b3b3b;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 30px;
+  }
+
+  .vidoe-list {
+    display: flex;
+    gap: 35px 100px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .watch-more {
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 759px){
+  .about-title{
+    font-size: 20px !important;
+  }
+}
+@media screen and (max-width: 759px){
+  .master-title{
+    font-size: 20px !important;
+  }
+}
+@media screen and (max-width: 759px) {
+  .about-shortnote{
+    font-size: 10px !important;
+  }
+}

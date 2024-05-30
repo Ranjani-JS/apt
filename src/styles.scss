@@ -1,0 +1,29 @@
+
+@use '@angular/material' as mat;
+
+
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+
+html, body { height: 100%; }
+body {
+     margin: 0; 
+    //  font-family: "Open Sans", sans-serif !important;
+    // font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+* {
+    scrollbar-color: inherit green;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 20px;
+  }

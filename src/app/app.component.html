@@ -1,0 +1,57 @@
+<div class="app-header">
+  <div class="med-and-lg-view-menu">
+    <div class="head-icon">
+      <a href="/"><img class="logo" src="/assets/apt_logo2.png" alt="" /></a>
+    </div>
+    <div class="web-view-menu">
+      <a href="/">Home</a>
+      <a href="about">About</a>
+      <a href="product">Products</a>
+      <a href="award">Award</a>
+      <a href="video">Video</a>
+      <a href="contact">Contact</a>
+    </div>
+  </div>
+
+  <div class="small-view-menu">
+    <div class="head-apt-icon">
+      <a href="/"
+        ><img class="logo-apt" src="/assets/apt_logo2.png" alt=""
+      /></a>
+    </div>
+    <!-- <div>
+          <button> <img class="navbar" (click)="sidenav.toggle()" src="/assets/navbar.png"></button>
+        </div> -->
+    <mat-toolbar>
+        <mat-toolbar-row>
+            <button  mat-icon-button>
+                <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+            </button>
+        </mat-toolbar-row>
+    </mat-toolbar>
+    <mat-sidenav-container>
+      <mat-sidenav #sidenav opened="true" mode="side">
+        <mat-nav-list class="menus">
+            <a mat-list-item href="/">Home</a>
+            <a mat-list-item href="about">About</a>
+            <a mat-list-item href="product">Products</a>
+            <a mat-list-item href="award">Award</a>
+            <a mat-list-item href="video">Video</a>
+            <a mat-list-item href="contact">Contact</a>
+          <!-- </div> -->
+        </mat-nav-list>
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <div style="height: 88vh"></div>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+</div>
+
+<div class="app-layout">
+  <router-outlet />
+</div>
+<footer class="app-footer">
+  <div>Copyright © 2024 APT Masala All rights reserved.</div>
+  <div>Powerd by JS softTech</div>
+</footer>

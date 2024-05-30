@@ -1,0 +1,123 @@
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: .4rem 2rem;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 10;
+    
+    .med-and-lg-view-menu {
+        display: none;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        .head-icon {
+            height: 100%;
+    
+            a, img {
+                height: inherit;
+                cursor: pointer;
+            }
+        }
+        .web-view-menu {
+            a {
+                margin-left: 30px;
+                font-weight: 600;
+                color: #1dae1d;
+                cursor: pointer;
+                text-decoration: none;
+                &:hover {
+                    color: #f84848;
+                }
+            }
+        }
+    }
+    .sm-view-menu {
+        display: none;
+    }
+
+    .navbar{
+        width: 63px;
+        height: 27px;
+    }
+
+    .small-view-menu {
+        display: none;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        .head-icon {
+            height: 100%;
+    
+            a, img {
+                height: inherit;
+                cursor: pointer;
+            }
+        }
+
+        .logo-apt{
+            height: 100%;
+        }
+        .head-apt-icon{
+            height: 100%;
+        }
+        .menus{
+            a {
+                margin-left: 30px;
+                font-weight: 600;
+                color: #1dae1d;
+                cursor: pointer;
+                text-decoration: none;
+                &:hover {
+                    color: #f84848;
+                }
+            }
+        }
+    }
+
+    
+
+    @media screen and (min-width: 760px) {
+        .med-and-lg-view-menu {
+            display: flex !important;
+        }
+    }
+
+    @media screen and (max-width: 759px) {
+        .small-view-menu {
+            display: flex !important;
+        }
+    }
+
+    @media screen and (min-width: 760px) {
+        .navbar{
+            display: none;
+        }   
+    }
+
+    @media screen and (max-width: 759px) {
+        .menus{
+            display: none;
+        }   
+    }
+
+}
+
+
+
+.app-footer {
+    height: 90px;
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6rem;
+    color: green;
+    font-size: 14px;
+    font-weight: 500;
+}

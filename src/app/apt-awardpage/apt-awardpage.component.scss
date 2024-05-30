@@ -1,0 +1,32 @@
+.award-page{
+    .award-banner{
+        width: 100%;
+        height: 600px;
+    }
+
+    .award-1{
+        width: 250px;
+        height: 350px;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+    .award-div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 36px;
+    }
+    .award-container{
+        margin: 16%
+    }
+    @media screen and (max-width: 759px){
+        .award-banner{
+            object-fit: contain;
+            height: auto;
+        }
+        .award-1{
+            object-fit: contain;
+            height: auto;
+        }
+    }
+}

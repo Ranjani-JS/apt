@@ -1,0 +1,30 @@
+.product-container {
+  .product-banner {
+    width: 100%;
+    height: 600px;
+  }
+  .product-packs{
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  .product-1 {
+    width: 16%;
+    height: 396px;
+    margin: 68px;
+  }
+
+  @media screen and (max-width: 759px) {
+    .product-banner{
+      object-fit: contain;
+      height: auto;
+    }
+    .product-1{
+      object-fit: contain;
+      height: auto;
+      width: 32%;
+      height: 235px;
+    }
+  }
+}
+

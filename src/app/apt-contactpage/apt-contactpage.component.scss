@@ -1,0 +1,54 @@
+.contact-container{
+ .c-banner{
+    height: 600px;
+    width: 100%;
+}
+.contact-logos{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    >div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            margin-bottom: 10px;
+        }
+        p {
+            font-weight: 600;
+        }
+    }
+}
+.call-image{
+    width: 80px;
+    height: 63px;
+}
+.mail-image{
+    width: 80px;
+    height: 63px;
+}
+.location-image{
+    width: 80px;
+    height: 63px;
+}
+.phone{
+    font-weight: bold;
+}
+.email{
+    font-weight: bold;
+}
+.address{
+    font-weight: bold;
+}
+@media screen and (max-width: 759px) {
+    .c-banner{
+        object-fit: contain;
+        height: auto;
+    }
+    .contact-logos{
+        flex-direction: column;
+    }
+   
+}
+
+}

@@ -1,0 +1,69 @@
+.apt-about-page {
+  .about-banner {
+    height: 600px;
+    width: 100%;
+    // object-fit: contain;
+  }
+  .about-container{
+    display: flex;
+
+    .about-owner {
+      width: 30%;
+      .owner-image {
+        width: 100%;
+        height: 288px;
+      }
+    }
+  }
+  .about-both{
+    width: 70%;
+    margin: 40px;
+    .about-content{
+      letter-spacing: 1px;
+    }
+  }
+
+  .about-second-container{
+    display: flex;
+
+    .about-second-image{
+      width: 100%;
+      height: 250px;
+      object-fit: contain;
+      margin: 40px;
+      .about-image-container{
+        width: 30%;
+        height: 288px;
+      }
+    }
+  }
+  .about-content-container{
+    width: 70%;
+    margin: 40px;
+  .about-second-content{
+    letter-spacing: 1px;
+  }
+  }
+
+@media screen and (max-width: 759px) {
+ .about-banner{
+    object-fit: contain;
+    height: auto;
+ } 
+ .owner-image{
+    width: auto !important;
+    height: 250px !important;
+    margin: 0 0 0 65px;
+ }
+ .about-second-container{
+  display: flex;
+  flex-direction: column;
+ }
+ .about-second-image{
+  width: auto !important;
+  height: 250px !important;
+  margin: 0 0 0 155px !important;
+ }
+}
+
+}  
